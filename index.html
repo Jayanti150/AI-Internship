@@ -1,0 +1,74 @@
+# AI-Internship
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NourishAI - Eat for what your body is telling you</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="#" class="brand">
+      <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path d="M3 15h26a13 13 0 0 1-26 0z" fill="#287653"/><path d="M16 13c0-5 3-8 8-9 0 5-3 8-8 9z" fill="#8fd19e"/><path d="M16 13c0-4-2-7-6-8 0 4 2 7 6 8z" fill="#E9B44C"/></svg>
+      Nourish<b>AI</b>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav id="menu">
+      <a href="#" class="active">Home</a>
+      <a href="#">Analysis</a>
+      <a href="#">Recipes</a>
+      <a href="#">Profile</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Eat for what your body is telling you.</h1>
+        <p>Log a meal, check a symptom or upload a report. We connect what you eat with how you feel, then suggest foods that help.</p>
+        <div class="actions">
+          <a href="#" class="btn">Log a meal</a>
+          <a href="#" class="link">Check a symptom</a>
+        </div>
+      </div>
+
+      <div class="wheel" role="group" aria-label="Pick an option">
+        <div class="wheel-in">
+          <button class="seg s1" data-pick="Diet"><b>Diet</b><small>Log a meal</small></button>
+          <button class="seg s2" data-pick="Symptoms"><b>Symptoms</b><small>How you feel</small></button>
+          <button class="seg s3" data-pick="Recipes"><b>Recipes</b><small>What to cook</small></button>
+          <button class="seg s4" data-pick="Reports"><b>Reports</b><small>Upload a file</small></button>
+        </div>
+        <div class="hub">Pick one</div>
+      </div>
+    </section>
+    <p id="picked" class="picked" role="status"></p>
+
+    <section class="wrap">
+      <h2>Fresh Choices, Better Health</h2>
+      <p class="sub">Explore balanced meals to inspire your daily nutrition.</p>
+      <div class="foods">
+        <article class="food"><div class="ph p1">🥗</div><h3>Healthy Meals</h3><p>Enjoy colourful vegetables and grains.</p></article>
+        <article class="food"><div class="ph p2">🍲</div><h3>Balanced Nutrition</h3><p>Build a variety of nutritious plates.</p></article>
+        <article class="food"><div class="ph p3">🥙</div><h3>Eat Fresh</h3><p>Choose fresh ingredients every day.</p></article>
+        <article class="food"><div class="ph p4">🍱</div><h3>Smart Food Choices</h3><p>Discover foods for your body's needs.</p></article>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step"><span>01</span><h3>Add what you know</h3><p>A meal you ate, a symptom you noticed, or a lab report.</p></div>
+        <div class="step"><span>02</span><h3>Get an analysis</h3><p>Our models compare it with nutrition data and common deficiency patterns.</p></div>
+        <div class="step"><span>03</span><h3>Act on it</h3><p>See which foods and recipes fit what your body needs.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>Demo build. Not a substitute for medical advice.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
